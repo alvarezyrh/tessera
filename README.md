@@ -1,6 +1,6 @@
 # Tessera
 
-Dynamic tiling for GNOME Shell 49–51 (Wayland and X11).
+Dynamic tiling for GNOME Shell 49–50 (Wayland and X11).
 
 - Binary-split layout: a new window splits the focused tile.
 - Tiling is forced as soon as 2 or more windows share a workspace and monitor;
@@ -22,7 +22,7 @@ Dynamic tiling for GNOME Shell 49–51 (Wayland and X11).
 
 ## Install
 
-Requirements: GNOME Shell 49–51, `gnome-extensions` CLI (ships with GNOME Shell), and
+Requirements: GNOME Shell 49–50, `gnome-extensions` CLI (ships with GNOME Shell), and
 `glib-compile-schemas` (package `glib2` on Fedora/Arch, `libglib2.0-bin` on Debian/Ubuntu)
 plus `make`.
 

@@ -2,7 +2,7 @@
   "uuid": "tessera@tessera.local",
   "name": "Tessera",
   "description": "Dynamic tiling window manager: binary-split layout, freely resizable dividers, 8px gaps and animated transitions.",
-  "shell-version": ["49", "50", "51"],
+  "shell-version": ["49", "50"],
   "settings-schema": "org.gnome.shell.extensions.tessera",
   "version": 1,
   "version-name": "1.0"
