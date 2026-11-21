@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schemalist>
+  <schema id="org.gnome.shell.extensions.tessera" path="/org/gnome/shell/extensions/tessera/">
+    <key name="gap" type="i">
+      <default>8</default>
+      <range min="0" max="64"/>
+      <summary>Gap between windows (px)</summary>
+    </key>
+    <key name="animation-duration" type="i">
+      <default>200</default>
+      <range min="0" max="1000"/>
+      <summary>Animation duration (ms), 0 disables animation</summary>
+    </key>
+
+    <key name="toggle-float" type="as"><default>["&lt;Super&gt;t"]</default><summary>Toggle floating for focused window</summary></key>
+
+    <key name="focus-left" type="as"><default>["&lt;Super&gt;&lt;Alt&gt;Left"]</default><summary>Focus left</summary></key>
+    <key name="focus-right" type="as"><default>["&lt;Super&gt;&lt;Alt&gt;Right"]</default><summary>Focus right</summary></key>
+    <key name="focus-up" type="as"><default>["&lt;Super&gt;&lt;Alt&gt;Up"]</default><summary>Focus up</summary></key>
+    <key name="focus-down" type="as"><default>["&lt;Super&gt;&lt;Alt&gt;Down"]</default><summary>Focus down</summary></key>
+
+    <key name="swap-left" type="as"><default>["&lt;Super&gt;&lt;Alt&gt;&lt;Shift&gt;Left"]</default><summary>Swap with left</summary></key>
+    <key name="swap-right" type="as"><default>["&lt;Super&gt;&lt;Alt&gt;&lt;Shift&gt;Right"]</default><summary>Swap with right</summary></key>
+    <key name="swap-up" type="as"><default>["&lt;Super&gt;&lt;Alt&gt;&lt;Shift&gt;Up"]</default><summary>Swap with up</summary></key>
+    <key name="swap-down" type="as"><default>["&lt;Super&gt;&lt;Alt&gt;&lt;Shift&gt;Down"]</default><summary>Swap with down</summary></key>
+
+    <key name="resize-left" type="as"><default>["&lt;Super&gt;&lt;Control&gt;Left"]</default><summary>Move divider left</summary></key>
+    <key name="resize-right" type="as"><default>["&lt;Super&gt;&lt;Control&gt;Right"]</default><summary>Move divider right</summary></key>
+    <key name="resize-up" type="as"><default>["&lt;Super&gt;&lt;Control&gt;Up"]</default><summary>Move divider up</summary></key>
+    <key name="resize-down" type="as"><default>["&lt;Super&gt;&lt;Control&gt;Down"]</default><summary>Move divider down</summary></key>
+  </schema>
+</schemalist>
