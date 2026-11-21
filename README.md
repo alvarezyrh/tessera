@@ -22,21 +22,30 @@ Dynamic tiling for GNOME Shell 49–51 (Wayland and X11).
 
 ## Install
 
-Requirements: GNOME Shell 49–51, `glib-compile-schemas` (package `glib2` /
-`libglib2.0-bin`), `make`.
+Requirements: GNOME Shell 49–51, `gnome-extensions` CLI (ships with GNOME Shell), and
+`glib-compile-schemas` (package `glib2` on Fedora/Arch, `libglib2.0-bin` on Debian/Ubuntu)
+plus `make`.
+
+**From a release zip** (no build tools needed):
 
 ```sh
-make install                                  # compile schemas, symlink into ~/.local/share/gnome-shell/extensions
-gnome-extensions enable tessera@user.local     # after the shell has seen the extension
+gnome-extensions install --force tessera@tessera.local.shell-extension.zip
+```
+
+**From source:**
+
+```sh
+git clone <repo-url> && cd tessera
+make install      # compiles schemas, symlinks into ~/.local/share/gnome-shell/extensions
+make enable       # after the shell has seen the extension
 ```
 
 On Wayland, log out and back in the first time so the shell discovers the
 extension. On X11 you can reload with `Alt+F2`, `r`, `Enter`.
 
-Other targets: `make schemas` (recompile schemas only), `make pack` (build an
-installable `.zip`).
+Other targets: `make schemas`, `make pack` (build the zip), `make uninstall`, `make disable`.
 
-Settings (gap, animation duration): `gnome-extensions prefs tessera@user.local`.
+Settings (gap, animation duration): `gnome-extensions prefs tessera@tessera.local`.
 After editing `extension.js` or `tree.js`, reload the shell session to apply
 changes. After editing the schema XML, run `make schemas`.
 
